@@ -37,17 +37,17 @@ ASCII Art without Background
 <tr>
 <td>
 <p align="center">
-<img src="https://github.com/ValdesChe/CodeSignatureASCII/blob/main/doc/screenshots/car-origin.jpg" width="30%" height="30%">
+<img src="https://github.com/ValdesChe/CodeSignatureASCII/blob/main/doc/screenshots/car-origin.jpg" width="100%" height="100%">
 </p>
 </td>
 <td>
 <p align="center">
-<img src="https://github.com/ValdesChe/CodeSignatureASCII/blob/main/doc/screenshots/car-with-bg.png" width="30%" height="30%">
+<img src="https://github.com/ValdesChe/CodeSignatureASCII/blob/main/doc/screenshots/car-with-bg.png" width="100%" height="100%">
 </p>
 </td>
 <td>
 <p align="center">
-<img src="https://github.com/ValdesChe/CodeSignatureASCII/blob/main/doc/screenshots/car-without-bg.png" width="30%" height="30%">
+<img src="https://github.com/ValdesChe/CodeSignatureASCII/blob/main/doc/screenshots/car-without-bg.png" width="100%" height="100%">
 </p>
 </td>
 </tr>
