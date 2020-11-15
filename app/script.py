@@ -18,10 +18,18 @@ def parse_args():
     parser.add_argument("-i", "--image",
                         help = "Path to the image",
                         required = True)
+    parser.add_argument("-width", "--width",
+                        help = "Width of the ASCII Art result",
+                        default=120,
+                        required = False)
+    parser.add_argument("-height", "--height",
+                        help = "Height of the ASCII Art result",
+                        default=35,
+                        required = False)                                        
     return parser.parse_args()
 
 
-def toASCII(frame, cols = 120, rows = 35):
+def makeArt(frame, cols = 120, rows = 35):
   frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
   height, width = frame.shape
   cell_width = width / cols
@@ -51,10 +59,14 @@ def grayToChar(gray):
 def main():
     greatings()
     filename = parse_args().image
+    width = int(parse_args().width)
+    height = int(parse_args().height)
 
     if (path.isfile(filename)):
         image = cv2.imread(filename)
-        print(colored(toASCII(image), 'red'))
+        # Result art
+        result = makeArt(image, width, height)
+        print(colored(result, 'red'))
     else:
         raise ValueError('Image path is not correct.')
     
